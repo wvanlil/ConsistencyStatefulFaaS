@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SnapperExperimentProcess": {
+      "commandName": "Project",
+      "commandLineArgs": "12 4 SNAPPER SMALLBANK true"
+    }
+  }
+}

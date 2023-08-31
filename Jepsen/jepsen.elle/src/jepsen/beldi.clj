@@ -31,7 +31,7 @@
       :read (assoc op :type :ok, :value (:body (httpclient/get "http://localhost:3000/read")))
       :write (assoc op :type :ok, :value (:body (httpclient/get "http://localhost:3000/write")))
       ;; :txn (assoc op :type :ok, :value (try 
-      ;;                                       (read-string (:body (:Output (json/read-str (:body (httpclient/post "https://fn65a5wmlzz3vp34aczlra35dq0oxhby.lambda-url.us-east-1.on.aws/" {:form-params {:InstanceId (str (rand-int 2147483647))
+      ;;                                       (read-string (:body (:Output (json/read-str (:body (httpclient/post "https://gateway.lambda-url.us-east-1.on.aws/" {:form-params {:InstanceId (str (rand-int 2147483647))
       ;;                                                                                                                                                                   :CallerName ""
       ;;                                                                                                                                                                   :Async true,
       ;;                                                                                                                                                                   :Input (str (:value op))}
@@ -96,7 +96,7 @@
 ;;   "Handles command line arguments. Can either run a test, or a web server for
 ;;   browsing results."
 ;;   [& args]
-;;   (print (type (read-string (:Output (json/read-str (:body (httpclient/post "https://u2i3ah2mqantpriz4vdbhridju0ginny.lambda-url.us-east-1.on.aws/" {:form-params {:InstanceId (str (rand-int 2147483647))
+;;   (print (type (read-string (:Output (json/read-str (:body (httpclient/post "https://gateway.lambda-url.us-east-1.on.aws/" {:form-params {:InstanceId (str (rand-int 2147483647))
 ;;                                                                                                             :CallerName ""
 ;;                                                                                                             :Async true,
 ;;                                                                                                             :Input "[[:append 0 1] [:r 0 nil]]"}

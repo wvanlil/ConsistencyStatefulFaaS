@@ -1,7 +1,7 @@
 import requests
 import random
 
-url = "https://u2i3ah2mqantpriz4vdbhridju0ginny.lambda-url.us-east-1.on.aws/"
+url = "gatewayurl.lambda-url.us-east-1.on.aws/"
 
 separate = [
     {

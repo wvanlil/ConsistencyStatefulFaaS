@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SnapperSiloHost": {
+      "commandName": "Project",
+      "commandLineArgs": "4 SNAPPER true"
+    }
+  }
+}
